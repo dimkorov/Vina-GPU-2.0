@@ -474,6 +474,7 @@ void main_procedure_cl(cache& c, const std::vector<model>& ms,  const precalcula
 		}
 
 		// Preparing ligand data
+		std::cout << "Number of other pairs: " << m.num_other_pairs() << std::endl;
 		assert(m.num_other_pairs() == 0); // m.other_paris is not supported!
 		assert(m.ligands.size() == 1); // Only one ligand supported!
 		m_ptr->ligand.pairs.num_pairs = m.ligands[0].pairs.size();

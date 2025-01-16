@@ -42,7 +42,7 @@
 #define XS_TYPE_SIZE 17
 #define SY_TYPE_SIZE 18
 
-#define MAX_NUM_OF_ATOM_RELATION_COUNT 1024
+#define MAX_NUM_OF_ATOM_RELATION_COUNT 8192
 
 typedef struct {
 	float data[GRIDS_SIZE];

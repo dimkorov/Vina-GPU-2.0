@@ -256,6 +256,12 @@ void parse_two_unsigneds(const std::string& str, const std::string& start, unsig
 }
 
 void parse_pdbqt_rigid(const path& name, rigid& r) {
+	// Open log file
+	std::ofstream logFile("log.txt", std::ios_base::app); // Append mode
+	if (logFile.is_open()) {
+		logFile << "opened!" << std::endl; // Log your message
+		logFile.close(); // Close the log file
+	}
 	ifile in(name);
 	unsigned count = 0;
 	std::string str;
