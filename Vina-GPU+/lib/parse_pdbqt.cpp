@@ -262,6 +262,7 @@ void parse_pdbqt_rigid(const path& name, rigid& r) {
 		logFile << "opened!" << std::endl; // Log your message
 		logFile.close(); // Close the log file
 	}
+	
 	ifile in(name);
 	unsigned count = 0;
 	std::string str;
